@@ -1,5 +1,5 @@
 const defineSelect = () => {
-  fetch(`http://api.nbp.pl/api/exchangerates/tables/c/`)
+  fetch(`https://api.nbp.pl/api/exchangerates/tables/c/`)
     .then((response) => response.json())
     .then((responseData) => {      
       calculateToPln(responseData);      
